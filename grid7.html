@@ -1,0 +1,51 @@
+<html>
+    <head>
+<title>Grid layout</title>
+<style>
+
+
+@media screen and(max-width: 600px){
+  body{
+    background-color:rgb(85, 15, 248);
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  align-content: center;
+  height: 300px;
+  gap: 10px;
+  background-color: #0dd8ce;
+  padding: 10px;
+}
+.grid-container > div {
+    background-color: rgba( 255, 255, 255, 0.8);
+    border: 1px solid rgba( 255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+</style>
+</head>
+
+<body>
+    <h1>Grid Layout</h1>
+
+    <p>This grid layout contains six columns and three rows:</p>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div>6</div>
+        
+      </div>
+      
+</body>
+  
+</html>
